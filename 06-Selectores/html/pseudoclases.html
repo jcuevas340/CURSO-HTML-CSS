@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Clases</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .hover{
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+        }
+
+        /* Se activa en cuanto al raton pasa por encima */
+        .hover:hover{
+            background-color: burlywood;
+        }
+
+        .listado{
+            padding: 15px;
+            background-color: aquamarine;
+        }
+
+        .listado p:first-child{
+            color: white;
+        }
+
+        /* Link no visitado todavia */
+        a:link{
+            color: deeppink;
+        }
+
+        a:visited{
+            color: crimson;
+        }
+
+        a:hover{
+            color: pink;
+        }
+
+        a:active{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover">
+        <p>Excepteur est proident deserunt proident voluptate deserunt irure anim sunt tempor occaecat aliqua. Officia fugiat fugiat magna commodo voluptate adipisicing aliquip occaecat. Dserunt eiusmod.</p>
+    </div>
+    <div class="listado">
+        <p>Parrafo 1</p>
+        <p>Parrafo 2</p>
+        <p>Parrafo 3</p>
+    </div>
+    <div class="enlaces">
+        <a href="http://google.com" target="_blank">Enlace a google</a>
+        <a href="http://marca.com" target="_blank">Enlace a marca</a>
+    </div>
+</body>
+</html>
